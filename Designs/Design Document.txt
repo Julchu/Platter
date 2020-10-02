@@ -1,0 +1,27 @@
+Restaurant vs restaurant's customers perspectives (2)
+
+Restaurant can display their list of foods w/ their prices
+- Can also alter the list of foods (remove/add items, change prices) (Lv. 1)
+- Can add customizability to individual items, such as what not to include in a burger, allergies, etc..., will automatically adjust cost (same as normal price changes) (Lv. 2)
+- Can view the list of orders made by customers (Lv. 3)
+- Can assign different progress levels of each order (todo, in progress, done), as well as ETA (Lv. 3)
+- Can display status of order to customer, as well as ETA (Lv. 3)
+
+Customers can view the list of foods w/ their prices
+- Can also order foods (cart system) where they can have X amount of Y items (adding/removing is easy to implement) (Lv. 1)
+- Can customize their food to their preference, and view their custom order as well as cost (Lv. 2)
+- Can view details of their order (the list of items) (Lv. 3)
+- Can view order status as well as ETA (Lv. 3)
+
+TODO: 
+- Restaurant management: tables/employees/staffing
+- Restaurant accounting (total sales info/analytics)
+
+
+Feature suggestions:
+
+"how orders behave across restaurants, like if you start a cart at one restaurant then go look at another restaurant and try to add something what happens? Does it save your cart from the past restaurant and start a new one, does it scrap the old one and start a new one?
+Probably shouldn't be able to mix between restaurants unless maybe you can but i dont' think most apps do that
+
+"uh customers being able to search for restaurants and maybe ordering them based on location closest
+and like searching for a type of food and getting restaurants back, so like maybe restaurants have tags so they show up in these searches"
