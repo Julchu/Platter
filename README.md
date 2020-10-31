@@ -1,8 +1,8 @@
 # Platter: manage your restaurant, staff, and customers
 Hosted with Heroku @ https://--------.herokuapp.com/
 
-## About 
-# Platter: all-in-one CRM software for restaurants and catering services to serve their customers, manage their staff, and simplify their accounting
+# About 
+Platter: all-in-one software for restaurants and catering services to serve their customers, manage their staff, and simplify their accounting
 
 ## Features
 ```
