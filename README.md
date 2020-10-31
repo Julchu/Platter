@@ -30,8 +30,13 @@ TODO (description):
 ## Example format of objects
 ```
 {
-	cafes
-	{
+	orders {
+		startTime: {type: Date, required: true},
+		endTime: {type: Date, required: true},
+		caterer: {type: mongoose.Schema.Types.ObjectId, ref: 'Users', required: true},
+		customer: {type: mongoose.Schema.Types.ObjectId, ref: 'Users', required: true}
+	}, 
+	cafes {
 		name: {type: String, default: "Name"},
 		type: {
 			type: String,
