@@ -75,6 +75,7 @@ TODO (description):
 **Template project code**
 - React/NodeJS
 -- https://github.com/Julchu/Dialer
+-- https://github.com/Julchu/testingreactnode
 - NodeJS boiler plate
 -- https://github.com/Julchu/CheapCut
 -- https://github.com/Julchu/ChatApp
