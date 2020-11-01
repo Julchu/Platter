@@ -1,21 +1,42 @@
-# CheapCut: a place for new barbers to exchange experience for affordable haircuts
-Hosted with Heroku @ https://cheapcut.herokuapp.com/
+# Platter: manage your restaurant, staff, and customers
+Hosted with Heroku @ https://--------.herokuapp.com/
 
-## About 
-CheapCut is a web app to find affordable local haircuts in exchange for new barbers to practice their expertise
+# About 
+All-in-one software for restaurants and catering services to serve their customers, manage their staff, and simplify their accounting
 
 ## Features
 ```
-- Encrypted signing in is required as a measure of verifying users and moderating appointment bookings
-- Allows users to saving personal hair preferences and rate and bookmark barbers
-- Uses GMaps api to find cafes
+Restaurant vs restaurant's customers perspectives (2)
+
+Restaurant can display their list of foods w/ their prices
+- Can also alter the list of foods (remove/add items, change prices) (Lv. 1)
+- Can add customizability to individual items, such as what not to include in a burger, allergies, etc..., will automatically adjust cost (same as normal price changes) (Lv. 2)
+- Can view the list of orders made by customers (Lv. 3)
+- Can assign different progress levels of each order (todo, in progress, done), as well as ETA (Lv. 3)
+- Can display status of order to customer, as well as ETA (Lv. 3)
+
+Customers can view the list of foods w/ their prices
+- Can also order foods (cart system) where they can have X amount of Y items (adding/removing is easy to implement) (Lv. 1)
+- Can customize their food to their preference, and view their custom order as well as cost (Lv. 2)
+- Can view details of their order (the list of items) (Lv. 3)
+- Can view order status as well as ETA (Lv. 3)
+
+TODO (description): 
+- Restaurant management: tables/employees/staffing
+- Restaurant accounting (total sales info/analytics)
+
 ```
 
 ## Example format of objects
 ```
 {
-	cafes
-	{
+	orders {
+		startTime: {type: Date, required: true},
+		endTime: {type: Date, required: true},
+		caterer: {type: mongoose.Schema.Types.ObjectId, ref: 'Users', required: true},
+		customer: {type: mongoose.Schema.Types.ObjectId, ref: 'Users', required: true}
+	}, 
+	cafes {
 		name: {type: String, default: "Name"},
 		type: {
 			type: String,
@@ -48,49 +69,20 @@ CheapCut is a web app to find affordable local haircuts in exchange for new barb
 }
 
 ```
-## // TODOs: 
-```
-
-- Google Maps
--- Implement update re-search and current location circle on map move
---- https://stackoverflow.com/questions/6981308/google-map-api-v3-drag-event-on-map
---- https://stackoverflow.com/questions/28493846/search-when-i-move-the-map
-
-- NodeJ
--- Implement update/overwrite/merge functionality
--- Implement functionality to search by filter
-
-- User sessions with PassportJS
--- Get authentication working
--- Local
--- Google
--- Facebook
-
-- Password encryption with BCryptJS (not BCrypt)
-
-- Bootstrap 4
--- Login page
---- Search functionality
-
--- Filter Tables based on location
-
-- jQuery, React, React Native
-```
 
 ## Links
 **Convert HTML/Pug**
 -- https://html2jade.org/
 
-**Nav bar tutorial**
--- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
-
-**Collapsable nav bar**
--- https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_collapse
-
 **Trello board**
--- https://trello.com/b/5Y90A6Vz/cheapcut
+-- https://trello.com/b/---------
 
 **Template project code**
+- React/NodeJS
+-- https://github.com/Julchu/Dialer
+-- https://github.com/Julchu/testingreactnode
+- NodeJS boiler plate
+-- https://github.com/Julchu/CheapCut
+-- https://github.com/Julchu/ChatApp
 -- https://github.com/Julchu/TeaWork
--- https://github.com/JuliusFan/CP476-Project
 
